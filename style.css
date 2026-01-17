@@ -95,6 +95,9 @@ body{
     height: 100vh;
     padding: 60px 9% 0;
 }
+.Home .Home-info span{
+    color:rgb(2, 180, 250) ;
+}
 .Home-info h1{
     font-size: 55px;
 }
@@ -153,6 +156,7 @@ body{
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    border: 2px solid rgb(0, 22, 30);
 }
 .profile .imgbox::before,
 .profile .imgbox::after{
@@ -160,7 +164,7 @@ body{
     position: absolute;
     width: 500px;
     height: 500px;
-    background: conic-gradient(transparent,transparent,transparent,purple);
+    background: conic-gradient(transparent,transparent,transparent,rgb(2, 180, 250) );
     transform: rotate(0deg);
     animation: rotate-border 10s linear infinite ;
 }
@@ -181,6 +185,7 @@ body{
     display: flex;
     justify-content: center;
     overflow: hidden;
+    border: 2px solid rgb(0, 22, 30);
     z-index: 1;
 }
 .profile .imgbox .image img{
