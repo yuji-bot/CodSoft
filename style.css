@@ -6,6 +6,8 @@
     font-family: Arial, Helvetica, sans-serif;
     border:none;
     outline: none;
+    background: rgb(0, 22, 30);
+    color: white;
 }
 html{
     font-size: 65%;
@@ -31,7 +33,7 @@ body{
 }
 .name{
     font-size: 3rem;
-    color: #000;
+    color: white;
     font-weight: 700;
     cursor: pointer;
     transition: 1s;
@@ -43,15 +45,15 @@ body{
 .nav a{
     font-size: 1.8rem;
     font-weight: 500;
-    color: rgb(187, 96, 96);
+    color: white;
     margin-left: 4rem;
     transition: 1s;
     border-bottom: 3px solid transparent;
 }
 .nav a:hover,
 .nav a.active{
-    color: #160707;
-    border-bottom: 3px solid #b74b4b;
+    color: rgb(2, 180, 250);
+    border-bottom: 3px solid rgb(2, 180, 250);
 
 }
 @media(max-width:995px) {
@@ -66,8 +68,8 @@ body{
         top: 100%;
         right: 0;
         width: 40%;
-        border-left: 3px solid red;
-        border-bottom: 3px sollid red;
+        border-left: 3px solid rgb(2, 180, 250);
+        border-bottom: 3px sollid rgb(2, 180, 250);
         padding: 1rem solid;
         border-top: 0.1rem solid black;
     }
@@ -82,7 +84,7 @@ body{
     .nav a:hover, .nav a:active{
         padding:1rem;
         border-radius: 0.5rem;
-        border-bottom: 0.5rem solid red;
+        border-bottom: 0.5rem solid rgb(2, 180, 250);
 
     }
     
@@ -111,8 +113,8 @@ body{
     color: #000;
     display: inline-block;
     padding: 10px 30px;
-    background: purple;
-    border: 2px solid purple;
+    background: rgb(2, 180, 250);
+    border: 2px solid rgb(2, 180, 250);
     border-radius: 30px;
     box-shadow: 0 0 10px #000;
     font-size: 16px;
@@ -121,7 +123,7 @@ body{
 }
 .btn:hover{
     background: transparent;
-    color: purple;
+    color: rgb(2, 180, 250)a;
     box-shadow: none;
 }
 .Home-info .button .sci{
@@ -130,22 +132,21 @@ body{
 .Home-info .button .sci a{
     display: inline-flex;
     padding: 8px;
-    border: 2px solid purple;
+    border: 2px solid rgb(2, 180, 250);
     border-radius: 50%;
-    color: purple;
+    color: rgb(2, 180, 250);
     margin: 0 8px;
     font-size: 20px;
     transition: 1s;
 }
 .Home-info .button .sci a:hover{
-    background: purple;
-    color: #000;
+    background: rgb(2, 180, 250);
+    color: rgb(2, 180, 250);
 }
 .profile .imgbox{
     position: relative;
     width: 32vw;
     height: 32vw;
-    background: red;
     border-radius: 50%;
     padding: 5px;
     display: flex;
@@ -160,13 +161,23 @@ body{
     width: 500px;
     height: 500px;
     background: conic-gradient(transparent,transparent,transparent,purple);
+    transform: rotate(0deg);
+    animation: rotate-border 10s linear infinite ;
 }
+.profile .imgbox::after{
+    animation-delay: -5s;
+}
+@keyframes rotate-border{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 .profile .imgbox .image{
     width: 100%;
     height: 100%;
     position: relative;
     border-radius: 50%;
-    background: rgb(122, 80, 122);
     display: flex;
     justify-content: center;
     overflow: hidden;
@@ -177,4 +188,5 @@ body{
     display: block;
     width: 85%;
     object-fit: cover;
+    mix-blend-mode:lighten;
 }
