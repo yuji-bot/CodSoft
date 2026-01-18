@@ -7,20 +7,28 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Protfolio</title>
+    <script>
+        function toggleMenu() {
+          document.getElementById("navMenu").classList.toggle("active");
+        }
+      </script>
 </head>
 <body>
     <header>
-        <a href="#" class="name">Sumit jadhav</a>
-        <div class="nav">
-            <a href="#" class="active">Home</a>
-            <a href="about.html">About-me</a>
-            <a href="skills.html" >Skills</a>
-            <a href="Education.html">Education</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-        </div>   
+        <a href="#" class="name">Sumit Jadhav</a>
+      
+        <div class="nav" id="navMenu">
+          <a href="#" class="active">Home</a>
+          <a href="about.html">About-me</a>
+          <a href="skills.html">Skills</a>
+          <a href="Education.html">Education</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
         </div>
-    </header>
+      
+        <div class="menu-btn" onclick="toggleMenu()">☰</div>
+      </header>
+      
     <section class="Home">
         <div class="Home-info">
             <h1>Sumit jadhav</h1>
