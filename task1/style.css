@@ -55,7 +55,7 @@ header {
   text-decoration: none;
 }
 
-/* Hamburger button */
+
 .menu-btn {
   display: none;
   font-size: 28px;
@@ -63,7 +63,7 @@ header {
   cursor: pointer;
 }
 
-/* 🔥 Mobile view */
+
 @media (max-width: 768px) {
   .nav {
     position: absolute;
