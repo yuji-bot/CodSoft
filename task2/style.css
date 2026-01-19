@@ -74,3 +74,26 @@ body {
     transform: translateY(-10px);
     box-shadow: 0 12px 25px rgba(0,0,0,0.2);
 }
+.footer {
+    background: #0a2540;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+
+    .hero {
+        padding: 60px 8%;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+}
