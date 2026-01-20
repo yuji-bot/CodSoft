@@ -48,3 +48,22 @@ button {
     transition: transform 0.1s; 
     
 }
+button:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.operator {
+    background: rgba(255, 165, 0, 0.7);
+}
+
+.equal {
+    background: rgba(40, 167, 69, 0.8);
+}
+
+.zero {
+    grid-column: span 2;
+}
