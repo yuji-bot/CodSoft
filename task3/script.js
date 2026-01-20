@@ -29,3 +29,27 @@ document.addEventListener("keydown", (e) => {
         handleInput("C");
     }
 });
+
+function handleInput(value) {
+    if (value === "C") {
+        currentValue = "";
+        display.value = "";
+    }
+    else if (value === "⌫") {
+        currentValue = currentValue.slice(0, -1);
+        display.value = currentValue;
+    }
+    else if (value === "=") {
+        try {
+            currentValue = eval(currentValue).toString();
+            display.value = currentValue;
+        } catch {
+            display.value = "Error";
+            currentValue = "";
+        }
+    }
+    else {
+        currentValue += value;
+        display.value = currentValue;
+    }
+}
